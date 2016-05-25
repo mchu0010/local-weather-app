@@ -51,7 +51,7 @@ img{
   text-shadow: 0 0 0.2em white;
 }
 
-.location, #conditions, #wind-speed{
+.location, #conditions, #wind-speed {
   display: inline-block;
 }
 
@@ -63,9 +63,23 @@ img{
   border: 2px solid #ffffff;
   color: #7F3320;
   padding: 2% 1% 2% 1%;
-  margin: 0 auto 0.7% auto; 
+  margin: 0 auto 0.7% auto;
   background-color: #ffffff;
   border-radius: 0.3em;
   box-shadow: .2em .2em .2em #444;
   opacity: 0.7;
 }
+
+.footerWrap {
+  background-color: #222222;
+  color: gray;
+  font-size: 12px;
+  font-weight: normal;
+  position: fixed;
+  border-top: 1px solid black;
+  bottom: 0;
+  width: 100%;
+  min-width: 320px;
+  padding: 1em 1em 0 1em;
+}
+
