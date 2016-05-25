@@ -47,9 +47,9 @@ $(document).ready(function() {
       var unitLabel;
 
       if (units === "imperial") {
-        unitLabel = "F";
+        unitLabel = "&deg; F";
       } else {
-        unitLabel = "C";
+        unitLabel = "&deg; C";
       }
 
       temperature = parseFloat((temperature).toFixed(1));
@@ -61,8 +61,7 @@ $(document).ready(function() {
 
       $('#temp').append(temperature + " " + unitLabel);
       $('#conditions').append(weather.weather[0].description);
-      $('#wind-speed').append(windDir + " " + weather.wind.speed + " knots");
-      $('#postal').append(postal);
+      $('#wind-speed').append(windDir + " " + weather.wind.speed + " Knots");
 
     }, "jsonp");
 
@@ -86,5 +85,5 @@ $(document).ready(function() {
     console.log(country, units);
     return units;
   }
-  
+
 });
