@@ -29,3 +29,27 @@ body {
   color: white;
   text-shadow: 0 0 0.3em black;
 }
+
+#icon, #temp{
+  display: inline-block;
+}
+
+img{
+  vertical-align: middle;
+}
+
+#icon{
+  position: relative;
+  bottom: 5px;
+}
+
+#temp{
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 1%;
+  color: #BFAD61;
+  text-shadow: 0 0 0.2em white;
+}
+
+
+
