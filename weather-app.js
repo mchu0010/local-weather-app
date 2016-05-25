@@ -15,6 +15,24 @@ $(document).ready(function() {
     setInterval(GetClock,1000);
   }
 
+
+  getLocation();
+
+  function getLocation() {
+    $.get("http://ipinfo.io", function(location) {
+      console.log(location);
+
+      $('.location')
+        .append(location.city + ", ")
+        .append(location.region);
+
+      var units = getUnits(location.country);
+      getWeather(location.loc, units);
+
+    }, "jsonp");
+
+  }
+
   function getWeather(loc, units) {
     lat = loc.split(",")[0]
     lon = loc.split(",")[1]
@@ -68,5 +86,5 @@ $(document).ready(function() {
     console.log(country, units);
     return units;
   }
-
+  
 });
